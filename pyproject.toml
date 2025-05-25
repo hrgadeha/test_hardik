@@ -1,0 +1,20 @@
+[project]
+name = "test_hardik"
+authors = [
+    { name = "Hardik Gadesha", email = "hardikgadesha@gmail.com"}
+]
+description = "The Solar ROI Calculator is a Frappe-based application designed to help solar energy companies assess the return on investment (ROI) for clients considering a switch to solar power. It provides accurate consumption-based calculations using energy usage data (in KW and KWH), supports time-of-use tariff modeling, and generates monthly savings insights."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
