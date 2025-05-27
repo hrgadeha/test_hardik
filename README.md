@@ -24,7 +24,7 @@ mit
 2. Clone this repository into your bench's apps directory:
 
 ```bash
-    cd frappe-bench/apps
+    cd frappe-bench
     bench get-app --branch main https://github.com/hrgadeha/test_hardik
 ```
 
