@@ -25,7 +25,7 @@ mit
 
 ```bash
     cd frappe-bench/apps
-    git clone <your-repo-url> test_hardik
+    bench get-app --branch main https://github.com/hrgadeha/test_hardik
 ```
 
 3. Install the app on your site:
