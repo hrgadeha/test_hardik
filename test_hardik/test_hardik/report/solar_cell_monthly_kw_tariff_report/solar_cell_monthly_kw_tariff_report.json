@@ -1,0 +1,43 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-05-26 17:51:49.798396",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-05-26 17:54:40.198861",
+ "modified_by": "Administrator",
+ "module": "Test Hardik",
+ "name": "Solar Cell Monthly KW Tariff Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Solar Cell KW Reading Entry",
+ "report_name": "Solar Cell Monthly KW Tariff Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Master Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

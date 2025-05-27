@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "autoname": "format:SC/KW/{customer}/{#####}",
+ "creation": "2025-05-25 17:16:37.303569",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gbqm",
+  "customer",
+  "customer_name",
+  "amended_from",
+  "column_break_lfpw",
+  "reading_date",
+  "reading_time",
+  "kw_value",
+  "tariff_details_section",
+  "tariff_type",
+  "tariff_month",
+  "tariff_year",
+  "column_break_spgq",
+  "tariff"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gbqm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Solar Cell KW Reading Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "link_filters": "[[\"Customer\",\"enable\",\"=\",1]]",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lfpw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reading_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Reading Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reading_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Reading Time",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "kw_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "KW Value",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "tariff_details_section",
+   "fieldtype": "Section Break",
+   "label": "Tariff Details"
+  },
+  {
+   "fieldname": "tariff_type",
+   "fieldtype": "Select",
+   "label": "Tariff Type",
+   "options": "\nLow Tariff\nHigh Tariff",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_spgq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tariff",
+   "fieldtype": "Currency",
+   "label": "Tariff",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tariff_month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tariff Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tariff_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tariff Year",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-27 18:28:08.209322",
+ "modified_by": "Administrator",
+ "module": "Test Hardik",
+ "name": "Solar Cell KW Reading Entry",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Accounts User"
+  },
+  {
+   "read": 1,
+   "role": "Accounts Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
