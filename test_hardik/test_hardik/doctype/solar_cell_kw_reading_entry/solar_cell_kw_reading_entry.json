@@ -124,7 +124,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-05-27 18:28:08.209322",
+ "modified": "2025-05-29 11:12:36.526773",
  "modified_by": "Administrator",
  "module": "Test Hardik",
  "name": "Solar Cell KW Reading Entry",
@@ -169,10 +169,12 @@
   },
   {
    "read": 1,
+   "report": 1,
    "role": "Accounts User"
   },
   {
    "read": 1,
+   "report": 1,
    "role": "Accounts Manager"
   }
  ],
